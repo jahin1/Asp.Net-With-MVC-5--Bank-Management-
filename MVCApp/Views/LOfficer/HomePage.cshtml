@@ -1,0 +1,55 @@
+﻿@model IEnumerable<MVCRepository.Transaction>
+
+@{
+    ViewBag.Title = "HomePage";
+    Layout = "~/Views/Shared/_loanlayout.cshtml";
+}
+
+<h2>Home Page</h2>
+
+
+
+<table class="table">
+    <tr>
+        <th>
+            Employee Name
+        </th>
+        <th>
+            Customer Name
+        </th>
+        <th>
+            Type
+        </th>
+        <th>
+            Amount
+        </th>
+        <th>
+            Date
+        </th>
+        <th></th>
+    </tr>
+
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tr_Through)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tr_AccName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tr_Type)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tr_Amount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tr_Date)
+            </td>
+
+        </tr>
+    }
+
+</table>

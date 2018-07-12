@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "AddMD";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Add MD</h2>
+<form method="post">
+
+    <table>
+        <tbody>
+            <tr>
+                <td><h5>Name</h5></td>
+                <td><input type="text" name="MD_name" required /></td>
+            </tr>
+            <tr>
+                <td><h5>Password</h5></td>
+                <td><input type="password" name="MD_password" required /></td>
+            </tr>
+            <tr>
+                <td><h5>Address</h5></td>
+                <td><input type="text" name="MD_address" required /></td>
+            </tr>
+            <tr>
+                <td><h5>Mobile(BD Formate, Ex=019xxxxxxxx)</h5></td>
+                <td><input type="text" name="MD_mobile" maxlength="11" required /></td>
+            </tr>
+            <tr>
+                <td><h5>Balance</h5></td>
+                <td><input type="number" name="MD_Balance" required /></td>
+            </tr>
+            <tr>
+                <td><h5>Salary</h5></td>
+                <td><input type="number" name="MD_Salary" required /></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input style="background-color: #3ac4ee;border-radius: 2px;" type="submit" name="Save" /></td>
+            </tr>
+        </tbody>
+    </table>
+</form>

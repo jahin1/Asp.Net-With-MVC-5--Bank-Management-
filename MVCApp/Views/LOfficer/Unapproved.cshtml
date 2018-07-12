@@ -1,0 +1,62 @@
+﻿@model IEnumerable<MVCRepository.LInfo>
+
+@{
+    ViewBag.Title = "Unapproved";
+    Layout = "~/Views/Shared/_loanlayout.cshtml";
+}
+
+<h2>Unapproved</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.User_acc_no)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Loan_Amount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Interest_Rate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Loan_Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Loan_Deadline)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Manager_Approval)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MD_Approval)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.User_acc_no)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Loan_Amount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Interest_Rate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Loan_Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Loan_Deadline)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Manager_Approval)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MD_Approval)
+        </td>
+    </tr>
+}
+
+</table>

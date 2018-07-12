@@ -1,0 +1,76 @@
+﻿@model MVCRepository.BranchManager
+
+@{
+    ViewBag.Title = "Home1";
+    Layout = "~/Views/Shared/_Managerlayout.cshtml";
+}
+
+<h2>Home</h2>
+
+<div>
+    <h4>BranchManager</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Manager_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Manager_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Manager_password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Manager_password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Manager_address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Manager_address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Manager_mobile)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Manager_mobile)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Manager_Salary)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Manager_Salary)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Manager_Balance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Manager_Balance)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Manager_branch)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Manager_branch)
+        </dd>
+
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Manager_Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

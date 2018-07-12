@@ -1,0 +1,24 @@
+﻿@model MVCRepository.Officer
+
+@{
+    ViewBag.Title = "Cheak_C_Balance";
+    Layout = "~/Views/Shared/_Officer.cshtml";
+}
+<h2>Customer Balance Cheak</h2>
+<form method="post">
+                
+    <table>
+        <tbody>
+
+            <tr>
+                <td><h5>UserName</h5></td>
+                <td><input type="text" name="name" required /></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><input style="background-color: #3ac4ee;border-radius: 2px;" type="submit" name="Save" value="Search" /></td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+

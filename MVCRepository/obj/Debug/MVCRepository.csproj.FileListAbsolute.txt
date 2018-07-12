@@ -1,0 +1,30 @@
+c:\users\pc\documents\visual studio 2012\Projects\testproject\MVCRepository\obj\Debug\MVCRepository.csprojResolveAssemblyReference.cache
+c:\users\pc\documents\visual studio 2012\Projects\testproject\MVCRepository\bin\Debug\MVCRepository.dll.config
+c:\users\pc\documents\visual studio 2012\Projects\testproject\MVCRepository\bin\Debug\MVCRepository.dll
+c:\users\pc\documents\visual studio 2012\Projects\testproject\MVCRepository\bin\Debug\MVCRepository.pdb
+c:\users\pc\documents\visual studio 2012\Projects\testproject\MVCRepository\bin\Debug\EntityFramework.dll
+c:\users\pc\documents\visual studio 2012\Projects\testproject\MVCRepository\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\pc\documents\visual studio 2012\Projects\testproject\MVCRepository\bin\Debug\EntityFramework.xml
+c:\users\pc\documents\visual studio 2012\Projects\testproject\MVCRepository\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\pc\documents\visual studio 2012\Projects\testproject\MVCRepository\obj\Debug\MVCRepository.dll
+c:\users\pc\documents\visual studio 2012\Projects\testproject\MVCRepository\obj\Debug\MVCRepository.pdb
+F:\AIUB\ATP2\Project\MVCApp\MVCRepository\bin\Debug\MVCRepository.dll.config
+F:\AIUB\ATP2\Project\MVCApp\MVCRepository\bin\Debug\MVCRepository.dll
+F:\AIUB\ATP2\Project\MVCApp\MVCRepository\bin\Debug\MVCRepository.pdb
+F:\AIUB\ATP2\Project\MVCApp\MVCRepository\bin\Debug\EntityFramework.dll
+F:\AIUB\ATP2\Project\MVCApp\MVCRepository\bin\Debug\EntityFramework.SqlServer.dll
+F:\AIUB\ATP2\Project\MVCApp\MVCRepository\bin\Debug\EntityFramework.xml
+F:\AIUB\ATP2\Project\MVCApp\MVCRepository\bin\Debug\EntityFramework.SqlServer.xml
+F:\AIUB\ATP2\Project\MVCApp\MVCRepository\obj\Debug\MVCRepository.csprojResolveAssemblyReference.cache
+F:\AIUB\ATP2\Project\MVCApp\MVCRepository\obj\Debug\MVCRepository.dll
+F:\AIUB\ATP2\Project\MVCApp\MVCRepository\obj\Debug\MVCRepository.pdb
+C:\Users\Raisul\Desktop\MVCApp\MVCRepository\bin\Debug\MVCRepository.dll.config
+C:\Users\Raisul\Desktop\MVCApp\MVCRepository\bin\Debug\MVCRepository.dll
+C:\Users\Raisul\Desktop\MVCApp\MVCRepository\bin\Debug\MVCRepository.pdb
+C:\Users\Raisul\Desktop\MVCApp\MVCRepository\bin\Debug\EntityFramework.dll
+C:\Users\Raisul\Desktop\MVCApp\MVCRepository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Raisul\Desktop\MVCApp\MVCRepository\bin\Debug\EntityFramework.xml
+C:\Users\Raisul\Desktop\MVCApp\MVCRepository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Raisul\Desktop\MVCApp\MVCRepository\obj\Debug\MVCRepository.csprojResolveAssemblyReference.cache
+C:\Users\Raisul\Desktop\MVCApp\MVCRepository\obj\Debug\MVCRepository.dll
+C:\Users\Raisul\Desktop\MVCApp\MVCRepository\obj\Debug\MVCRepository.pdb

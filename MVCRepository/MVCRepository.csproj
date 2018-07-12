@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{487BC951-88AB-47AE-848F-7DEAF2E77E58}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MVCRepository</RootNamespace>
+    <AssemblyName>MVCRepository</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Tables\Branch.cs" />
+    <Compile Include="Repository\BranchRepository.cs" />
+    <Compile Include="DataAccess.cs" />
+    <Compile Include="InterfaceRepository\ICheckBookRepository.cs" />
+    <Compile Include="InterfaceRepository\IExpenseRepository.cs" />
+    <Compile Include="InterfaceRepository\ILoanRepository.cs" />
+    <Compile Include="InterfaceRepository\ITransactionRepository.cs" />
+    <Compile Include="Repository\CheckBookRepository.cs" />
+    <Compile Include="Repository\ExpenseRepository.cs" />
+    <Compile Include="Tables\CheckBook.cs" />
+    <Compile Include="Tables\Expense.cs" />
+    <Compile Include="Tables\LInfo.cs" />
+    <Compile Include="Repository\LoanRepository.cs" />
+    <Compile Include="Repository\LoginRepository.cs" />
+    <Compile Include="Tables\HROfficer.cs" />
+    <Compile Include="Repository\HROfficerRepository.cs" />
+    <Compile Include="InterfaceRepository\IHROfficerRepository.cs" />
+    <Compile Include="InterfaceRepository\ILORepository.cs" />
+    <Compile Include="InterfaceRepository\IMDirectorRepository.cs" />
+    <Compile Include="InterfaceRepository\ITOfficerRepository.cs" />
+    <Compile Include="Tables\LoanOfficer.cs" />
+    <Compile Include="Repository\LORepository.cs" />
+    <Compile Include="Tables\MDirector.cs" />
+    <Compile Include="Repository\MDirectorRepository.cs" />
+    <Compile Include="Tables\Admin.cs" />
+    <Compile Include="Repository\AdminRepository.cs" />
+    <Compile Include="Tables\BranchManager.cs" />
+    <Compile Include="Tables\Cashier.cs" />
+    <Compile Include="InterfaceRepository\IBranchManagerRepository.cs" />
+    <Compile Include="Repository\BranchManagerRepository.cs" />
+    <Compile Include="Repository\OfficerRepository.cs" />
+    <Compile Include="InterfaceRepository\IAdminRepository.cs" />
+    <Compile Include="InterfaceRepository\IOfficerRepository.cs" />
+    <Compile Include="InterfaceRepository\ICashierRepository.cs" />
+    <Compile Include="InterfaceRepository\IUserRepository.cs" />
+    <Compile Include="MVCDbContext.cs" />
+    <Compile Include="Tables\Officer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tables\LoginInfo.cs" />
+    <Compile Include="Tables\User.cs" />
+    <Compile Include="Repository\CashierRepository.cs" />
+    <Compile Include="Repository\UserRepository.cs" />
+    <Compile Include="Tables\TOfficer.cs" />
+    <Compile Include="Repository\TOfficerRepository.cs" />
+    <Compile Include="Tables\Transaction.cs" />
+    <Compile Include="Repository\TransactionRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,57 @@
+﻿@model IEnumerable<MVCRepository.Transaction>
+
+@{
+    ViewBag.Title = "Yestarday_Transcation";
+    Layout = "~/Views/Shared/_Managerlayout.cshtml";
+}
+<h2>Transactions Of Last Day</h2>
+
+
+<table class="table">
+    <tr>
+        <th style="color:white">
+            Employee Name
+        </th>
+        <th>
+            Employee Type
+        </th>
+        <th>
+            Customer Name
+        </th>
+        <th>
+            Type
+        </th>
+        <th>
+            Amount
+        </th>
+        <th>
+            Date
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tr_Through)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tr_EmpType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tr_AccName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tr_Type)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tr_Amount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tr_Date)
+            </td>
+        </tr>
+    }
+
+</table>

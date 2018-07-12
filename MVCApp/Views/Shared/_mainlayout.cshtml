@@ -1,0 +1,279 @@
+﻿<!DOCTYPE html>
+<html>
+<title>RAM BANKING</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="~/Scontent/styles_main.css" type="text/css" />
+<style>
+    html, body, h1, h2, h3, h4 {
+        font-family: "Lato", sans-serif;
+    }
+
+    .mySlides {
+        display: none;
+    }
+
+    .w3-tag, .fa {
+        cursor: pointer;
+    }
+
+    .w3-tag {
+        height: 15px;
+        width: 15px;
+        padding: 0;
+        margin-top: 6px;
+    }
+</style>
+<body>
+
+    <!-- Links (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-row w3-large w3-light-grey">
+            <div class="w3-col s3">
+                <a href="#" class="w3-button w3-block">Home</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#plans" class="w3-button w3-block">Plans</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="~/Customer/CreateAccount" class="w3-button w3-block">Log In Account</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+
+        <div class="w3-panel">
+            <h1 ><b>RAM BANK LTD.</b></h1>
+          
+        </div>
+
+        <!-- Slideshow -->
+        <div class="w3-container">
+            <div class="w3-display-container mySlides">
+
+                <img src="~/Scontent/585380736-3d-money-wallpapers.jpg" style="width:100%">
+            </div>
+            <div class="w3-display-container mySlides">
+                <img src="~/Scontent/68622266-bank-wallpapers.jpg" style="width:100%">
+              
+            </div>
+            <div class="w3-display-container mySlides">
+                <img src="~/Scontent/bank-window-bonus-promotion-918x516.jpg" style="width:100%">
+               
+            </div>
+
+            <!-- Slideshow next/previous buttons -->
+            <div class="w3-container w3-dark-grey w3-padding w3-xlarge">
+                <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+                <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+
+                <div class="w3-center">
+                    <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                    <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                    <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grid -->
+        <div class="w3-row w3-container">
+            <div class="w3-center w3-padding-64">
+                <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">What We Offer</span>
+            </div>
+            <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
+                <h3>Savings Bank</h3>
+                <p>General savings Bank (SB) Account is designed for individual savers who want to save a small part of their income which may be used in the near future and also intend to have some profitable returns on such savings. People can deposit a small amount and can withdraw whenever they desire but the total numbers of withdrawals over a period of time are limited.</p>
+            </div>
+
+            <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
+                <h3>Fixed Deposit</h3>
+                <p>Fixed deposit (FD) is a financial instrument provided by banks or NBFCs which provides investors a higher rate of interest than a regular savings account, until the given maturity date. It may or may not require the creation of a separate account. ... The interest rate varies between 4 and 7.25 percent..</p>
+            </div>
+
+            <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16">
+                <h3>Home Loan</h3>
+                <p>"Home Loan" A sum of money borrowed from a financial institution or bank to purchase a house. Home loans consist of an adjustable or fixed interest rate and payment terms..</p>
+            </div>
+
+            
+        </div>
+
+        <!-- Grid -->
+        <div class="w3-row-padding" id="plans">
+            <div class="w3-center w3-padding-64">
+                <h3>Choose Your Banking Plan</h3>
+            </div>
+
+            <div class="w3-third w3-margin-bottom">
+                <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+                    <li class="w3-black w3-xlarge w3-padding-32">Home Loan</li>
+                    <li class="w3-padding-16"><b>Low</b> Interest(%)</li>
+                    <li class="w3-padding-16"><b>Sufficient</b>Interest Time</li>
+                    <li class="w3-padding-16"><b>Endless</b> Support</li>
+                    <li class="w3-padding-16">
+                        <h2 class="w3-wide">5%</h2>
+                        <span class="w3-opacity">per Year</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="w3-third w3-margin-bottom">
+                <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+                    <li class="w3-dark-grey w3-xlarge w3-padding-32">Sign in</li>
+                    <li class="w3-padding-16">@RenderBody()</li>
+                </ul>
+            </div>
+
+            <div class="w3-third w3-margin-bottom">
+            </div>
+        </div>
+        <!-- Contact -->
+        <div class="w3-row-padding" id="about">
+            <div class="w3-center w3-padding-64">
+                <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Who We Are</span>
+            </div>
+
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-card-4">
+                    <img src="~/Scontent/18670929_2010035955891923_608718153026353591_n.jpg" alt="John" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Raisul Islam</h3>
+                        <p class="w3-opacity">CEO & Founder</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-card-4">
+                    <img src="~/Scontent/26230590_1995565227364436_8057522232784491338_n.jpg" alt="Jane" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Ashadul Hoque Jahin</h3>
+                        <p class="w3-opacity">Chairman & Founder</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-card-4">
+                    <img src="~/Scontent/14102570_1167910503266602_1815114923067001937_n.jpg" alt="Mike" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Minhaz Uddin</h3>
+                        <p class="w3-opacity">Director & Founder</p>
+                    </div>
+                </div>
+            </div>
+
+            
+       
+
+        <form class="w3-container" action="/action_page.php" target="_blank">
+            <div class="w3-section">
+                <label>Name</label>
+                <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Name" required>
+            </div>
+            <div class="w3-section">
+                <label>Email</label>
+                <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Email" required>
+            </div>
+            <div class="w3-section">
+                <label>Subject</label>
+                <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Subject" required>
+            </div>
+            <div class="w3-section">
+                <label>Message</label>
+                <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Message" required>
+            </div>
+            <button type="submit" class="w3-button w3-block w3-black">Send</button>
+        </form>
+
+    </div>
+
+    <!-- Footer -->
+
+
+    <footer id="fullfooter">
+        <div class="footer-content width">
+            <ul>
+                <li><h4>Services</h4></li>
+                <li><a href="#">Online Banking</a></li>
+                <li><a href="#">Home loan</a></li>
+                <li><a href="#">Industrial Loan</a></li>
+                <li><a href="#">Islamic Banking </a></li>
+
+            </ul>
+
+            <ul>
+                <li><h4>Branches</h4></li>
+                <li><a href="#">Head Office</a></li>
+                <li><a href="#">Dhaka Branch</a></li>
+                <li><a href="#">Rajshahi Branch</a></li>
+                <li><a href="#">Khulna Branch</a></li>
+                <li><a href="#">Sylhet Branch</a></li>
+            </ul>
+            <ul>
+                <li><h4>Help</h4></li>
+                <li><a href="#">How to open account? </a></li>
+                <li><a href="#">Contracts </a></li>
+
+            </ul>
+
+            <ul class="endfooter">
+                <li><h4>RAM Bank LTD.</h4></li>
+                <li>
+                    We serve our customers<br /><br />
+                    <div class="social-icons">
+                        <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-youtube fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="clear"></div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; RAM Bank LTD. 2014</p>
+        </div>
+    </footer>
+
+
+    <script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-white";
+}
+    </script>
+
+</body>
+</html>
+

@@ -1,0 +1,153 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>deiform - Free CSS Template by ZyPOP</title>
+    <link rel="stylesheet" href="~/Scontent/reset_m.css" type="text/css" />
+    <link rel="stylesheet" href="~/Scontent/styles_ma.css" type="text/css" />
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="~/Scontent/jquery.js"></script>
+    <script type="text/javascript" src="~/Scontent/slider.js"></script>
+    <script type="text/javascript" src="~/Scontent/superfish.js"></script>
+    <script type="text/javascript" src="~/Scontent/custom.js"></script>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <!--
+    deiform, a free CSS web template by ZyPOP (zypopwebtemplates.com/)
+
+    Download: http://zypopwebtemplates.com/
+
+    License: Creative Commons Attribution
+    //-->
+</head>
+<body>
+    <div id="container" class="width">
+        <header>
+            <div>
+                <h1><a href="/">Online RAM Banking</a></h1>
+                <nav>
+                    <ul class="sf-menu dropdown">
+                        <li><a href="~/Manager/HomePage">Home</a></li>
+                        <li><a href="~/Manager/MyProfile">My account</a></li>
+                        <li class="selected">
+                            <a>Employee Information</a>
+                            <ul>
+                                <li><a href="~/Manager/Officer_details">Officer details</a></li>
+                                <li><a href="~/Manager/Cashier_details">Cashier details</a></li>
+                                <li><a href="~/Manager/LoanOfficer_details">Loan Officer details</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="selected">
+                            <a>Employee Salary</a>
+                            <ul>
+                                <li><a href="~/Manager/Officer_Salary">Officer Salary</a></li>
+                                <li><a href="~/Manager/Cashier_Salary">Cashier Salary</a></li>
+                                <li><a href="~/Manager/LoanOfficer_Salary">Loan officer Salary</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Reports</a>
+                            <ul>
+                                <li><a href="~/Manager/Annual_Repots">Annual Repots</a></li>
+                                <li><a href="~/Manager/Todays_Transcation">Today's Transcation</a></li>
+                                <li><a href="~/Manager/Yestarday_Transcation ">Yestarday's Transcation </a></li>
+                                <li><a href="~/Manager/Last_6_Month_Transcation">Half Year Transcation</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Loan</a>
+                            <ul>
+                                <li><a href="~/Manager/Pending_Loans">Pending Loans</a></li>
+                                <li><a href="~/Manager/Active_Loans">Active Loans</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a >Settings</a>
+                            <ul>
+                                <li><a href="~/Manager/ChangePassword">Change Password</a></li>
+                                <li><a href="~/Manager/EditProfile">Edit Profile</a></li>
+                                <li><a href="~/Login/Login">Log Out</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                </nav>
+            </div>
+            <div class="clear"></div>
+
+        </header>
+        <div id="body" class="width">
+            <section id="content" class="two-column with-right-sidebar">
+                <article>
+
+                    @RenderBody()
+
+                </article>
+            </section>
+            <aside class="sidebar big-sidebar right-sidebar">
+                <div class="Latest_color">
+                    <ul>
+
+
+                        <li>
+                            <h4>Reports</h4>
+                            <ul>
+                                <li><a href="~/Manager/Last_6_Month_Transcation">Half Year Repots</a></li>
+                                <li><a href="~/Manager/Annual_Repots">Annual Repots</a></li>
+                                <li><a href="~/Manager/Todays_Transcation">Today's Transcation</a></li>
+                                <li><a href="~/Manager/Yestarday_Transcation ">Yestarday's Transcation </a></li>
+                            
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content width">
+            <ul>
+                <li><h4>Services</h4></li>
+                <li><a href="#">Online Banking</a></li>
+                <li><a href="#">Home loan</a></li>
+                <li><a href="#">Industrial Loan</a></li>
+                <li><a href="#">Islamic Banking </a></li>
+            </ul>
+            <ul>
+                <li><h4>Branches</h4></li>
+                <li><a href="#">Head Office</a></li>
+                <li><a href="#">Dhaka Branch</a></li>
+                <li><a href="#">Rajshahi Branch</a></li>
+                <li><a href="#">Khulna Branch</a></li>
+                <li><a href="#">Sylhet Branch</a></li>
+            </ul>
+            <ul>
+                <li><h4>Help</h4></li>
+                <li><a href="#">How to open account? </a></li>
+                <li><a href="#">Contracts </a></li>
+            </ul>
+            <ul class="endfooter">
+                <li><h4>RAM Bank LTD.</h4></li>
+                <li>
+                    We serve our customers<br /><br />
+                    <div class="social-icons">
+                        <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-youtube fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+                    </div>
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; RAM Bank LTD. 2014</p>
+        </div>
+    </footer>
+</body>
+</html>

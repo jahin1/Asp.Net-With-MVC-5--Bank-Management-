@@ -1,0 +1,31 @@
+﻿@model List<MVCRepository.Branch>
+@{
+    ViewBag.Title = "Confirm_Half_Year_Repot";
+    Layout = "~/Views/Shared/_mdlayout.cshtml";
+}
+
+<h2>Select Branch For Half Year Reports</h2>
+
+<form method="post">
+
+    <table>
+        <tbody>
+
+            <tr>
+                <td><h5>Branch</h5></td>
+                <td>
+                    <select name="Emp_branch">
+                        @foreach (MVCRepository.Branch br in Model)
+                        {
+                            <option value="@br.Branch_Location">@br.Branch_Location</option>
+                        }
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><input style="background-color: #3ac4ee;border-radius: 2px;" type="submit" name="Save" /></td>
+            </tr>
+        </tbody>
+    </table>
+</form>

@@ -1,0 +1,38 @@
+﻿@model MVCRepository.LoanOfficer
+@{
+    ViewBag.Title = "EditProfile";
+    Layout = "~/Views/Shared/_loanlayout.cshtml";
+}
+
+<h2>EditProfile</h2>
+<form method="post">
+    <input type="hidden" name="LOfficer_Id" value="@Model.LOfficer_Id" />
+    <table>
+        <tbody>
+            <tr>
+                <td><h5>Name</h5></td>
+                <td><input type="text" name="LOfficer_name" value="@Model.LOfficer_name" readonly /></td>
+            </tr>
+            <tr>
+                <td><h5>Password</h5></td>
+                <td><input type="text" name="LOfficer_Password" value="@Model.LOfficer_Password" readonly /></td>
+            </tr>
+            <tr>
+                <td><h5>Address</h5></td>
+                <td><input type="text" name="LOfficer_address" value="@Model.LOfficer_address" required /></td>
+            </tr>
+            <tr>
+                <td><h5>Mobile(BD Formate, Ex=019xxxxxxxx)</h5></td>
+                <td><input type="text" name="LOfficer_mobile" maxlength="11" value="@Model.LOfficer_mobile" required /></td>
+            </tr>
+            <tr>
+                <td><h5>Balance</h5></td>
+                <td><input type="number" name="LOfficer_Balance" value="@Model.LOfficer_Balance" readonly /></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><input style="background-color: #3ac4ee;border-radius: 2px;" type="submit" name="Save" value="save" /></td>
+            </tr>
+        </tbody>
+    </table>
+</form>

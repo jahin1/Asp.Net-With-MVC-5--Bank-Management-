@@ -1,0 +1,32 @@
+﻿@model MVCRepository.Officer
+
+@{
+    ViewBag.Title = "Utility_Bills";
+    Layout = "~/Views/Shared/_Officer.cshtml";
+}
+<h2>Utility Bills Payment</h2>
+<form method="post">
+                
+    <table>
+        <tbody>
+
+            <tr>
+                <td><h5>Expanse Name</h5></td>
+                <td><input type="text" name="Expense_name" required /></td>
+            </tr>
+            <tr>
+                <td><h5>Expanse Amount</h5></td>
+                <td><input type="text" name="Expense_amount" required /></td>
+            </tr>
+            <tr>
+                <td><h5>Expanse Date</h5></td>
+                <td><input type="date" name="Expense_date"  required /></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><input style="background-color: #3ac4ee;border-radius: 2px;" type="submit" name="Save" value="Save" /></td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+

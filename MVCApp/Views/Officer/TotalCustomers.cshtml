@@ -1,0 +1,30 @@
+﻿@model List<MVCRepository.User>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Officer.cshtml";
+}
+
+<h2>Total Customer List</h2>
+
+<p><b>Total Customer List</b></p>
+
+<table>
+    <tr>
+        <th>Account No</th>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Mobile Number</th>
+        <th>Account Type</th>
+    </tr>
+    @foreach (MVCRepository.User user in Model)
+    {
+        <tr>
+            <td>@user.User_acc_no</td>
+            <td>@user.User_Name</td>
+            <td>@user.User_address</td>
+            <td>@user.User_mobile</td>
+            <td>@user.User_acc_type</td>
+            
+        </tr>
+    }
+</table> 

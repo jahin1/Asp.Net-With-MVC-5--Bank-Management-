@@ -1,0 +1,116 @@
+﻿@model dynamic
+@{ 
+    ViewBag.}
+
+<p><b>Admin List</b></p>
+
+<table>
+    <tr>
+        <th>Admin Id</th>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Mobile Number</th>
+    </tr>
+    @foreach (MVCRepository.Admin admin in Model.admins)
+    {
+        <tr>
+            <td>@admin.Admin_Id</td>
+            <td>@admin.Admin_Name</td>
+            <td>@admin.Admin_address</td>
+            <td>@admin.Admin_mobile</td>
+        </tr>
+    }
+</table>
+
+<p><b>User List</b></p>
+
+<table>
+    <tr>
+        <th>Account No</th>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Mobile Number</th>
+        <th>Account Type</th>
+    </tr>
+    @foreach (MVCRepository.User user in Model.users)
+    {
+        <tr>
+            <td>@user.User_acc_no</td>
+            <td>@user.User_Name</td>
+            <td>@user.User_address</td>
+            <td>@user.User_mobile</td>
+            <td>@user.User_balance</td>
+            <td>@user.User_acc_type</td>
+        </tr>
+    }
+</table> 
+
+<p><b>Cashier List</b></p>
+
+<table>
+    <tr>
+        <th>Cashier Id</th>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Mobile Number</th>
+        <th>Branch</th>
+    </tr>
+    @foreach (MVCRepository.Cashier cashier in Model.cashiers)
+    {
+        <tr>
+            <td>@cashier.Cashier_Id</td>
+            <td>@cashier.Cashier_Name</td>
+            <td>@cashier.Cashier_address</td>
+            <td>@cashier.Cashier_mobile</td>
+            <td>@cashier.Cashier_branch</td>
+        </tr>
+    }
+</table>
+
+<p><b>Officer List</b></p>
+
+<table>
+    <tr>
+        <th>Officer Id</th>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Mobile Number</th>
+        <th>Branch</th>
+        <th>Position</th>
+    </tr>
+    @foreach (MVCRepository.Officer officer in Model.officers)
+    {
+        <tr>
+            <td>@officer.Officer_Id</td>
+            <td>@officer.Officer_Name</td>
+            <td>@officer.Officer_address</td>
+            <td>@officer.Officer_mobile</td>
+            <td>@officer.Officer_branch</td>
+            <td>@officer.Officer_position</td>
+        </tr>
+    }
+</table>
+
+<p><b>Branch Manager List</b></p>
+
+<table>
+    <tr>
+        <th>Manager Id</th>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Mobile Number</th>
+        <th>Branch</th>
+        <th>Status</th>
+    </tr>
+    @foreach (MVCRepository.BranchManager managers in Model.managers)
+    {
+        <tr>
+            <td>@managers.Manager_Id</td>
+            <td>@managers.Manager_Name</td>
+            <td>@managers.Manager_address</td>
+            <td>@managers.Manager_mobile</td>
+            <td>@managers.Manager_branch</td>
+            <td>@managers.Manager_status</td>
+        </tr>
+    }
+</table>

@@ -1,0 +1,38 @@
+﻿@model MVCRepository.HROfficer
+@{
+    ViewBag.Title = "EditProfile";
+    Layout = "~/Views/Shared/_HRlayout.cshtml";
+}
+
+<h2>EditProfile</h2>
+<form method="post">
+    <input type="hidden" name="HR_acc_Id" value="@Model.HR_acc_Id" />
+    <table>
+        <tbody>
+            <tr>
+                <td><h5>Name</h5></td>
+                <td><input type="text" name="HR_name" value="@Model.HR_name" readonly /></td>
+            </tr>
+            <tr>
+                <td><h5>Password</h5></td>
+                <td><input type="text" name="HR_password" value="@Model.HR_password" readonly /></td>
+            </tr>
+            <tr>
+                <td><h5>Address</h5></td>
+                <td><input type="text" name="HR_address" value="@Model.HR_address" required /></td>
+            </tr>
+            <tr>
+                <td><h5>Mobile(BD Formate, Ex=019xxxxxxxx)</h5></td>
+                <td><input type="text" name="HR_mobile" maxlength="11" value="@Model.HR_mobile" required /></td>
+            </tr>
+            <tr>
+                <td><h5>Balance</h5></td>
+                <td><input type="number" name="HR_Balance" value="@Model.HR_Balance" readonly /></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><input style="background-color: #3ac4ee;border-radius: 2px;" type="submit" name="Save" value="Save" /></td>
+            </tr>
+        </tbody>
+    </table>
+</form>

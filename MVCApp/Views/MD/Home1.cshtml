@@ -1,0 +1,67 @@
+﻿@model MVCRepository.MDirector
+
+@{
+    ViewBag.Title = "Home1";
+    Layout = "~/Views/Shared/_mdlayout.cshtml";
+}
+
+<h2>Home</h2>
+
+<div>
+    <h4>MDirector</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MD_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MD_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MD_password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MD_password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MD_address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MD_address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MD_Salary)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MD_Salary)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MD_Balance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MD_Balance)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MD_mobile)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MD_mobile)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MD_Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

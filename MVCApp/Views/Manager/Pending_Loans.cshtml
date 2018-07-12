@@ -1,0 +1,44 @@
+﻿@model List<MVCRepository.LInfo>
+@{
+    ViewBag.Title = "Pending_Loans";
+    Layout = "~/Views/Shared/_Managerlayout.cshtml";
+}
+
+<h2>Pending Loans Log</h2>
+
+
+<table>
+    <thead>
+        <tr><td>Approval</td>
+            <td>Load Id</td>
+            <td>Loan Amount</td>
+            <td>Interest Rate</td>
+            <td>Loan Date</td>
+            <td>Manager Approval</td>
+            <td>Loan Cause</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (MVCRepository.LInfo br in Model)
+        {
+            <tr>
+                <td>
+                    <form method="post">
+                        <input type="hidden" name="Loan_Id" value="@br.Loan_Id" />
+                        <input type="submit" value="Approve" />
+                    </form>
+                </td>
+                <td>@br.Loan_Id</td>
+                <td>@br.Loan_Amount</td>
+                <td>@br.Interest_Rate</td>
+                <td>@br.Loan_Date</td>
+                <td>@br.Manager_Approval</td>
+                <td>@br.LoanCause</td>
+
+            </tr>
+        }
+        <tr>
+            <td></td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,49 @@
+﻿@model MVCRepository.Cashier
+@{  
+    ViewBag.Title = "EditProfile";
+    Layout = "~/Views/Shared/_CashierLayout.cshtml";
+}
+
+<h2>EditProfile</h2>
+<form method="post">
+                <input type="hidden" name="Cashier_Id" value="@Model.Cashier_Id" />
+    <table>
+        <tbody>
+            <tr>
+                <td><h5>Name</h5></td>
+                <td><input type="text" name="Cashier_Name" value="@Model.Cashier_Name" readonly/></td>
+            </tr>
+            <tr>
+                <td><h5>Password</h5></td>
+                <td><input type="text" name="Cashier_password" value="@Model.Cashier_password" readonly /></td>
+            </tr>
+            <tr>
+                <td><h5>Address</h5></td>
+                <td><input type="text" name="Cashier_address" value="@Model.Cashier_address" required /></td>
+            </tr>
+            <tr>
+                <td><h5>Mobile(BD Formate, Ex=019xxxxxxxx)</h5></td>
+                <td><input type="text" name="Cashier_mobile" maxlength="11" value="@Model.Cashier_mobile" required /></td>
+            </tr>
+            <tr>
+                <td><h5>Balance</h5></td>
+                <td><input type="number" name="Cashier_Balance" value="@Model.Cashier_Balance" readonly /></td>
+            </tr>
+            <tr>
+                <td><h5>Salary</h5></td>
+                <td><input type="number" name="Cashier_Salary" value="@Model.Cashier_Salary" readonly /></td>
+            </tr>
+            <tr>
+                <td><h5>Last Payment Date</h5></td>
+                <td><input type="text" name="Cashier_LastPaymentDate" value="@Model.Cashier_LastPaymentDate" readonly /></td>
+            </tr>
+            <tr>
+                <td><h5>Branch</h5></td>
+                <td><input type="text" name="Cashier_branch" value="@Model.Cashier_branch" readonly /></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input style="background-color: #3ac4ee;border-radius: 2px;" type="submit" name="Save" /></td>
+            </tr>
+        </tbody>
+    </table>
+</form>

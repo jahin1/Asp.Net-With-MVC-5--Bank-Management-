@@ -1,0 +1,44 @@
+﻿@model List<MVCRepository.CheckBook>
+@{
+    ViewBag.Title = "CheackBook";
+    Layout = "~/Views/Shared/_Officer.cshtml";
+}
+
+<h2>Cheack Book Requested List</h2>
+
+
+<table>
+    <thead>
+        <tr>
+            <td>Account No</td>
+            <td>Name</td>
+            <td>ApplyDate</td>           
+            <td> Fixed Date</td>
+            <td>Status</td>
+            <td>Approve</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (MVCRepository.CheckBook br in Model)
+        {
+            <tr>
+
+                <td>@br.Check_id</td>
+                <td>@br.Check_User_name</td>
+                <td>@br.Check_apply_Date</td>
+                <td>@br.Check_fixed_Date</td>
+                <td>@br.Check_status</td>
+                <td>
+                    <form method="post">
+                        <input type="hidden" name="Check_User_name" value="@br.Check_User_name" />
+                        <input style="background-color: #3ac4ee;border-radius: 2px;"  type="submit" value="Approve" />
+                    </form>
+                </td>
+
+            </tr>
+        }
+        <tr>
+            <td></td>
+        </tr>
+    </tbody>
+</table>

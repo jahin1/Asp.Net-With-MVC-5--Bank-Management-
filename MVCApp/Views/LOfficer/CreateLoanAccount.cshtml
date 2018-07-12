@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "CreateLoanAccount";
+    Layout = "~/Views/Shared/_loanlayout.cshtml";
+}
+
+<h2>CreateLoanAccount</h2>
+<form method="post">
+
+    <table>
+        <tbody>
+            <tr>
+                <td><h5>Name</h5></td>
+                <td><input type="text" name="User_Name" required /></td>
+            </tr>
+            <tr>
+                <td><h5>Password</h5></td>
+                <td><input type="text" name="User_password" required /></td>
+            </tr>
+            <tr>
+                <td><h5>Address</h5></td>
+                <td><input type="text" name="User_address" required /></td>
+            </tr>
+            <tr>
+                <td><h5>Mobile(BD Formate, Ex=019xxxxxxxx)</h5></td>
+                <td><input type="text" name="User_mobile" maxlength="11" required /></td>
+            </tr>
+            <tr>
+                <td><h5>AccountType</h5></td>
+                <td><input type="text" name="User_acc_type" value="Loan" readonly/>
+            </tr>
+            <tr>
+                <td><h5>Loan Amount</h5></td>
+                <td><input type="number" name="Loan_Amount" required /></td>
+            </tr>
+            <tr>
+                <td><h5>Interest_Rate</h5></td>
+                <td><input type="number" name="Interest_Rate" required />
+            </tr>
+            <tr>
+                <td><h5>Loan Deadline (Years)</h5></td>
+                <td><input type="number" name="Loan_Deadline" required />
+            </tr>
+            <tr>
+                <td><h5>Loan Cause</h5></td>
+                <td ><input type="text" name="LoanCause" required />
+            </tr>
+            <tr>
+                <td colspan="2"><input style="background-color: #3ac4ee;border-radius: 2px;" type="submit" name="Save" /></td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+
+
+

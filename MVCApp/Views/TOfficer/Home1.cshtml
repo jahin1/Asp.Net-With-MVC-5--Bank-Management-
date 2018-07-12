@@ -1,0 +1,75 @@
+﻿@model MVCRepository.TOfficer
+
+@{
+    ViewBag.Title = "Home1";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Home</h2>
+
+<div>
+    <h4>TOfficer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TO_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TO_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TO_password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TO_password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TO_address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TO_address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TO_mobile)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TO_mobile)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TO_Salary)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TO_Salary)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TO_Balance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TO_Balance)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TO_branch)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TO_branch)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TO_accId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,57 @@
+﻿@model IEnumerable<MVCRepository.Transaction>
+
+@{
+    ViewBag.Title = "Annual_Repots";
+    Layout = "~/Views/Shared/_Managerlayout.cshtml";
+}
+
+<h2>Current Year Transactions</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+          Transaction Through
+        </th>
+        <th>
+            Transaction Employee
+        </th>
+        <th>
+            Transaction User Name
+        </th>
+        <th>
+            Transaction Types
+        </th>
+        <th>
+            Transaction Amount
+        </th>
+        <th>
+            Transaction Date
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tr_Through)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tr_EmpType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tr_AccName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tr_Type)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tr_Amount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tr_Date)
+        </td>
+    </tr>
+}
+
+</table>

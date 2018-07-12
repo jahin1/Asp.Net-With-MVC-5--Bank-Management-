@@ -1,0 +1,91 @@
+﻿@model MVCRepository.Cashier
+
+@{
+    ViewBag.Title = "Home1";
+    Layout = "~/Views/Shared/_CashierLayout.cshtml";
+}
+
+<h2>Home</h2>
+
+<div>
+    <h4>Cashier</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Cashier_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cashier_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cashier_password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cashier_password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cashier_address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cashier_address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cashier_mobile)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cashier_mobile)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cashier_Salary)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cashier_Salary)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cashier_LastPaymentDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cashier_LastPaymentDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cashier_TotalPayment)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cashier_TotalPayment)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cashier_Balance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cashier_Balance)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cashier_branch)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cashier_branch)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Cashier_Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

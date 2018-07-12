@@ -1,0 +1,35 @@
+﻿@model MVCRepository.User
+@{
+    ViewBag.Title = "CheckBook";
+    Layout = "~/Views/Shared/_userlayout.cshtml";
+}
+
+<h2>Check Book Request</h2>
+<form method="post">
+               
+    <table>
+        <tbody>
+            <tr>
+                <td><h5>Name</h5></td>
+                <td><input type="text" name="Check_User_name"  value="@Session["User_Name"]" readonly /></td>
+            </tr>
+           
+            <tr>
+                <td><h5>Apply Date</h5></td>
+                <td><input type="text" name="Check_apply_Date" value="@ViewData["Message"]" readonly /></td>
+            </tr>
+            <tr>
+                <td><h5>Status</h5></td>
+                <td><input type="text" name="Check_status"  value="Pending" readonly/></td>
+            </tr>
+            <tr>
+                <td><h5>Status</h5></td>
+                <td><input type="text" name="Check_fixed_Date" value="Not_Assigned" readonly /></td>
+            </tr>
+           
+            <tr>
+                <td colspan="2"><input style="background-color: #3ac4ee;border-radius: 2px;" type="submit" name="Save" /></td>
+            </tr>
+        </tbody>
+    </table>
+</form>

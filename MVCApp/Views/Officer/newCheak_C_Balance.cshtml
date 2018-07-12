@@ -1,0 +1,39 @@
+﻿@model MVCRepository.User
+
+@{
+    ViewBag.Title = "newCheak_C_Balance";
+    Layout = "~/Views/Shared/_Officer.cshtml";
+}
+<h2>Customer Balance Cheak</h2>
+<form method="post">
+                
+    <table>
+        <tbody>
+            <tr>
+                <td><h5><font color="red">Name</font></h5></td>
+                <td><h4><font color="red">@Model.User_Name</font></h4></td>
+            </tr>
+            <tr>
+                <td><h5><font color="red">Account No</font></h5></td>
+                <td><h4><font color="red">@Model.User_acc_no</font></h4></td>
+            </tr>
+            <tr>
+                <td><h5><font color="red">Balance</font></h5></td>
+                <td><h4><font color="red">@Model.User_balance</font></h4></td>
+            </tr>
+            <tr>
+                <td><h5><font color="red">Mobile no</font></h5></td>
+                <td><h4><font color="red">@Model.User_mobile</font></h4></td>
+            </tr>
+            <tr>
+                <td><h5><font color="red">Account Type</font></h5></td>
+                <td><h4><font color="red">@Model.User_acc_type</font></h4></td>
+            </tr>
+            <tr>
+                <td><h5><font color="red">Address</font></h5></td>
+                <td><h4><font color="red">@Model.User_address</font></h4></td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+

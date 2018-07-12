@@ -1,0 +1,41 @@
+﻿@model MVCRepository.MDirector
+@{
+    ViewBag.Title = "EditProfile";
+    Layout = "~/Views/Shared/_mdlayout.cshtml";
+}
+
+<h2>EditProfile</h2>
+<form method="post">
+    <input type="hidden" name="MD_Id" value="@Model.MD_Id" />
+    <table>
+        <tbody>
+            <tr>
+                <td><h5>Name</h5></td>
+                <td><input type="text" name="MD_name" value="@Model.MD_name" readonly /></td>
+            </tr>
+            <tr>
+                <td><h5>Password</h5></td>
+                <td><input type="text" name="MD_password" value="@Model.MD_password" readonly /></td>
+            </tr>
+            <tr>
+                <td><h5>Address</h5></td>
+                <td><input type="text" name="MD_address" value="@Model.MD_address" required /></td>
+            </tr>
+            <tr>
+                <td><h5>Mobile(BD Formate, Ex=019xxxxxxxx)</h5></td>
+                <td><input type="text" name="MD_mobile" maxlength="11" value="@Model.MD_mobile" required /></td>
+            </tr>
+            <tr>
+                <td><h5>Balance</h5></td>
+                <td><input type="number" name="MD_Balance" value="@Model.MD_Balance" readonly /></td>
+            </tr>
+            <tr>
+                <td><h5>Salary</h5></td>
+                <td><input type="number" name="MD_Salary" value="@Model.MD_Salary" readonly /></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input style="background-color: #3ac4ee;border-radius: 2px;" type="submit" name="Save" /></td>
+            </tr>
+        </tbody>
+    </table>
+</form>

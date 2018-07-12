@@ -1,0 +1,70 @@
+﻿@model List<MVCRepository.Branch>
+@{
+    ViewBag.Title = "AddEmployee";
+    Layout = "~/Views/Shared/_HRlayout.cshtml";
+}
+
+<h2>AddEmployee</h2>
+<form method="post">
+
+    <table>
+        <tbody>
+            <tr>
+                <td><h5>Name</h5></td>
+                <td><input type="text" name="Emp_name" required/></td>
+            </tr>
+            <tr>
+                <td><h5>Password</h5></td>
+                <td><input type="password" name="Emp_password" required/></td>
+            </tr>
+            <tr>
+                <td><h5>Address</h5></td>
+                <td><input type="text" name="Emp_address" required/></td>
+            </tr>
+            <tr>
+                <td><h5>Mobile(BD Formate, Ex=019xxxxxxxx)</h5></td>
+                <td><input type="text" name="Emp_mobile" maxlength="11" required/></td>
+            </tr>
+            <tr>
+                <td><h5>Salary</h5></td>
+                <td><input type="number" name="Emp_salary" required/></td>
+            </tr>
+            <tr>
+                <td><h5>Branch</h5></td>
+                <td>
+                    <select name="Emp_branch">
+                        @foreach (MVCRepository.Branch br in Model)
+                        {
+                            <option value="@br.Branch_Location">@br.Branch_Location</option>
+                        }
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><h5>Employee Position</h5></td>
+                <td>
+                    <select name="Emp_position">
+                        <option value="Officer">
+                            Officer
+                        </option>
+                        <option value="Cashier">
+                            Cashier
+                        </option>
+                        <option value="LOfficer">
+                            Loan Officer
+                        </option>
+                        <option value="HROfficer">
+                            HR Officer
+                        </option>
+                        <option value="Manager">
+                            Branch Manager
+                        </option>
+                    </select>
+            </tr>
+            <tr>
+                <td colspan="2"><input style="background-color: #3ac4ee;border-radius: 2px;" type="submit" name="Save" /></td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+

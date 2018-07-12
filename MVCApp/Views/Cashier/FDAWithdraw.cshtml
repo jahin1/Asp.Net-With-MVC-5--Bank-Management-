@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "FDAWithdraw";
+    Layout = "~/Views/Shared/_CashierLayout.cshtml";
+}
+
+<h2>Fixed Deposit Accoutn Withdraw</h2>
+<form method="post">
+    <table>
+        <tbody>
+            <tr>
+                <td><h5>User Account No</h5></td>
+                <td><input type="number" name="accno" required /></td>
+            </tr>
+            <tr>
+                <td><h5>User Name</h5></td>
+                <td><input type="text" name="name" required /></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input style="background-color: #3ac4ee;border-radius: 2px;" type="submit" name="Withdraw" /></td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+

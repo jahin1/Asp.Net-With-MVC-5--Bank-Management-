@@ -1,0 +1,31 @@
+﻿@model List<MVCRepository.Cashier>
+@{
+    ViewBag.Title = "Cashier_details";
+    Layout = "~/Views/Shared/_Managerlayout.cshtml";
+}
+
+<h2>Cashier details</h2>
+<table>
+    <tbody>
+        <tr>
+            <td>Name</td>
+            <td>Branch</td>
+            <td>Mobile</td>
+            <td>Address</td>
+            <td>Last PaymentDate</td>
+            <td>Total Payment</td>
+        </tr>
+        @foreach (MVCRepository.Cashier br in Model)
+        {
+            <tr>
+                <td>@br.Cashier_Name</td>
+                <td>@br.Cashier_branch</td>
+                <td>@br.Cashier_mobile</td>
+                <td>@br.Cashier_address</td>
+                <td>@br.Cashier_LastPaymentDate</td>
+                <td>@br.Cashier_TotalPayment</td>
+            </tr>
+        }
+    </tbody>
+</table>
+

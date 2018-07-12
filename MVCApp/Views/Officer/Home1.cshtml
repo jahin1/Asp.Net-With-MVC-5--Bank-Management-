@@ -1,0 +1,75 @@
+﻿@model MVCRepository.Officer
+
+@{
+    ViewBag.Title = "Home1";
+    Layout = "~/Views/Shared/_Officer.cshtml";
+}
+
+<h2>Home</h2>
+
+<div>
+    <h4>Officer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Officer_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Officer_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Officer_password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Officer_password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Officer_address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Officer_address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Officer_mobile)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Officer_mobile)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Officer_Salary)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Officer_Salary)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Officer_Balance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Officer_Balance)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Officer_branch)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Officer_branch)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Officer_Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

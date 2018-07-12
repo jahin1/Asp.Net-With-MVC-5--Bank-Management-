@@ -1,0 +1,48 @@
+﻿@model List<MVCRepository.LoanOfficer>
+@{
+    ViewBag.Title = "LoanOfficer_Salary";
+    Layout = "~/Views/Shared/_Managerlayout.cshtml";
+}
+
+<h2>Loan Officer Salary Payment Log</h2>
+
+
+
+
+
+<table>
+    <thead>
+        <tr>
+            <td>Complete Payment</td>
+            <td>Name</td>
+            <td>Branch</td>
+            <td>Last Payment Date</td>
+            <td>Salary</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (MVCRepository.LoanOfficer br in Model)
+        {
+            <tr>
+                <td>
+                    <form method="post">
+                        <input type="hidden" name="LOfficer_Id" value="@br.LOfficer_Id" />
+                        <input type="submit" value="Pay" />
+                    </form>
+                </td>
+                <td>@br.LOfficer_name</td>
+                <td>@br.LOfficer_branch</td>
+                <td>@br.LOfficer_LastPaymentDate</td>
+                <td>@br.LOfficer_Salary</td>
+
+            </tr>
+        }
+        <tr>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+

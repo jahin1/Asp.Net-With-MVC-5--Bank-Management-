@@ -1,0 +1,63 @@
+﻿@model IEnumerable<MVCRepository.Transaction>
+
+@{
+    ViewBag.Title = "Empty";
+    Layout = "~/Views/Shared/_mdlayout.cshtml";
+}
+
+<form method="post">
+    <td colspan="2" ><input style="background-color: #3ac4ee;border-radius: 2px;" type="submit" name="Save" value="print Pdf"/></td>
+</form >
+
+<h2>Annual_Repots</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            Transaction Through
+        </th>
+        <th>
+            Transaction Employee
+        </th>
+        <th>
+            Transaction User Name
+        </th>
+        <th>
+            Transaction Types
+        </th>
+        <th>
+            Transaction Amount
+        </th>
+        <th>
+            Transaction Date
+        </th>
+        <th></th>
+    </tr>
+
+
+    @foreach (MVCRepository.Transaction item in Model)
+    {
+        <tr>
+            <td>
+                @item.Tr_Through
+            </td>
+            <td>
+                @item.Tr_EmpType
+            </td>
+            <td>
+                @item.Tr_AccName
+            </td>
+            <td>
+                @item.Tr_Type
+            </td>
+            <td>
+                @item.Tr_Amount
+            </td>
+            <td>
+                @item.Tr_Date
+            </td>
+
+        </tr>
+    }
+
+</table>

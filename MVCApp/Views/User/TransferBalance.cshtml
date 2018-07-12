@@ -1,0 +1,31 @@
+﻿@model MVCRepository.User
+@{
+    ViewBag.Title = "TransferBalance";
+    Layout = "~/Views/Shared/_userlayout.cshtml";
+}
+
+<h2>Transfer Balance</h2>
+
+<form method="post">
+    <input type="hidden" name="User_acc_no" value="@Model.User_acc_no" />
+    <table>
+        <tbody>
+            <tr>
+                <td><h5>Name</h5></td>
+                <td><input type="text" name="Name"/></td>
+            </tr>
+            <tr>
+                <td><h5>User Id</h5></td>
+                <td><input type="number" name="id"/></td>
+            </tr>
+            
+            <tr>
+                <td><h5>Amount</h5></td>
+                <td><input type="number" name="amount"/></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input style="background-color: #3ac4ee;border-radius: 2px;" type="submit" name="Save" /></td>
+            </tr>
+        </tbody>
+    </table>
+</form>

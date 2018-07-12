@@ -1,0 +1,32 @@
+﻿@model List<MVCRepository.BranchManager>
+@{
+    ViewBag.Title = "ManagerDetails";
+    Layout = "~/Views/Shared/_mdlayout.cshtml";
+}
+
+<h2>Manager Details</h2>
+
+<table>
+    <tbody>
+        <tr>
+            <td>Name</td>
+            <td>Branch</td>
+            <td>Mobile</td>
+            <td>Address</td>
+            <td>Total Payment</td>
+        </tr>
+        @foreach (MVCRepository.BranchManager br in Model)
+        {
+            <tr>
+                <td>@br.Manager_Name</td>
+                <td>@br.Manager_branch</td>
+                <td>@br.Manager_mobile</td>
+                <td>@br.Manager_address</td>
+                <td>@br.Manager_TotalPayment</td>
+        </tr>
+        }
+    </tbody>
+</table>
+
+
+

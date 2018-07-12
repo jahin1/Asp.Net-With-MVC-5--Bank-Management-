@@ -1,0 +1,39 @@
+﻿@model MVCRepository.User
+@{
+    ViewBag.Title = "EditProfile";
+    Layout = "~/Views/Shared/_userlayout.cshtml";
+}
+
+<h2>EditProfile</h2>
+<form method="post">
+    <input type="hidden" name="User_acc_no" value="@Model.User_acc_no" />
+    <table>
+        <tbody>
+            <tr>
+                <td><h5>Name</h5></td>
+                <td><input type="text" name="User_Name" value="@Model.User_Name" readonly /></td>
+            </tr>
+            <tr>
+                <td><h5>Password</h5></td>
+                <td><input type="text" name="User_password" value="@Model.User_password" readonly /></td>
+            </tr>
+            <tr>
+                <td><h5>Address</h5></td>
+                <td><input type="text" name="User_address" value="@Model.User_address" required /></td>
+            </tr>
+            <tr>
+                <td><h5>Mobile(BD Formate, Ex=019xxxxxxxx)</h5></td>
+                <td><input type="text" name="User_mobile" maxlength="11" value="@Model.User_mobile" required /></td>
+            </tr>
+            <tr>
+                <td><h5>Balance</h5></td>
+                <td><input type="number" name="User_balance" value="@Model.User_balance" readonly /></td>
+            </tr>
+           
+            <tr>
+                <td colspan="2"><input style="background-color: #3ac4ee;border-radius: 2px;" type="submit" name="Save" value="Save" /></td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+

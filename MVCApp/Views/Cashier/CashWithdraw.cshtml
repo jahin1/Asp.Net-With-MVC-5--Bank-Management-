@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "CashWithdraw";
+    Layout = "~/Views/Shared/_CashierLayout.cshtml";
+}
+
+<h2>Cash Withdraw </h2>
+<form method="post">
+    <table>
+        <tbody>
+            <tr>
+                <td><h5>User Account No</h5></td>
+                <td><input type="number" name="accno" required /></td>
+            </tr>
+            <tr>
+                <td><h5>Amount Tk</h5></td>
+                <td><input type="number" name="amount" required /></td>
+            </tr>
+            <tr>
+                <td><h5>Confirm Amount Tk</h5></td>
+                <td><input type="number" name="conamount" required /></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input style="background-color: #3ac4ee;border-radius: 2px;" type="submit" name="Withdraw" /></td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+
